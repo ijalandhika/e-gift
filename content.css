@@ -1,0 +1,410 @@
+/* width */
+::-webkit-scrollbar {
+    height: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:  #000000;; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:  #000000;; 
+}
+
+.tbs__content {
+    width: 100%;
+    padding-top: 32px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tbs__content__main {
+    width: 49.5%;
+    padding: 0 30px
+}
+
+.tbs__content__main h2{
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0 !important;
+    text-transform: uppercase;
+}
+
+.tbs__content__main h2.form_title{
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.category--list {
+    padding-top: 16px;
+    display: flex;
+    overflow-y: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.category--list::-webkit-scrollbar {
+    display: none;
+}
+
+.category--list__item {
+    background: #FFFFFF;
+    border-radius: 100px;
+    border: 1px solid #000000;
+    text-align: center;
+    margin: 5px !important; 
+    padding: 9px 15px;
+    line-height: 16.42px;
+    width: 25%;
+}
+
+.category--list__item.active {
+    background-color: #000000;
+    color: #FFFFFF;
+} 
+
+.content-divider {
+    border-left: 1px solid #C4C4C4;
+    width: 0.2%;
+}
+
+.content__image {
+    padding-top: 18px; 
+    padding-bottom: 12px;
+}
+
+.content__image img{
+    width: 100%;
+}
+
+.content__descriptions h5 {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: none !important;
+    margin: 0 !important;
+    line-height: 19px;
+    padding-bottom: 6px;
+}
+.content__descriptions span {
+    font-weight: 400;
+    font-size: 12px;
+    color: #989898;
+}
+
+.content__descriptions .total_price {
+    font-size: 18px;
+    font-weight: 600;
+    color: #989898;
+}
+
+.content__total__price {
+    padding-top: 32px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.content__the_price {
+    padding-top: 42px;
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.content__the__price--list {
+    flex-basis: 50%;
+    width: 50%;
+    padding: 12px 10px;
+    
+}
+
+.content__the_price--item {
+    background: #FFFFFF;
+    border-radius: 100px;
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 10px 0px;
+    width: 100%;
+}
+
+.content__the_price--item.active {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.content__proceed {
+    padding-top: 33px;
+}
+
+.content__proceed button {
+    width: 100%;
+    /* color: #626262; */
+    color: #FFFFFF; 
+    background-color: #000000;
+    padding: 14px;
+    border: 0 !important;
+}
+
+.content__proceed button:disabled {
+    color: #626262;
+    background-color: #F4F4F4;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.elipsis_text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tbs__content__form {
+    padding-top: 18px;
+}
+
+.tbs__content__form-group {
+    padding: 12px 0;
+}
+
+.tbs__content__form-group label{
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+}
+
+.tbs__content__form-group input, textarea{
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 5px;
+    border: none;
+    border-bottom: 1px solid #989898;
+    padding: 14px 0;
+    display: block;
+    max-width: 323px;
+}
+
+.tbs__content__form-group textarea{
+    max-width: 529px;
+}
+
+.tbs__content__form-group span{
+    font-size: 12px;
+    color: #989898;
+    line-height: 18px;
+    display: inline-block;
+    padding-top: 14px;
+}
+
+.message-counter {
+    padding-top: 8px;
+    text-align: right;
+    line-height: 14px;
+    font-size: 12px;
+    color: #989898;
+}
+
+
+.products--list {
+    position: relative;
+}
+
+.product-image.active {
+    position: absolute;
+    background-image: url("./images/checklist.png");
+    background-repeat: no-repeat;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    background-color:  #00AB00;
+    border-radius: 50%;
+    background-position: center center;
+    top: 42%;
+    left: 45%; 
+}
+
+.owl-prev {
+    width: 15px;
+    height: 40px;
+    position: absolute;
+    top: 34%;
+    margin-left: 0px;
+    /* display: block !important; */
+    border:0px solid black;
+}
+
+.owl-next {
+    width: 15px;
+    height: 40px;
+    position: absolute;
+    top: 34%;
+    right: 0px;
+    /* display: block !important; */
+    border:0px solid black;
+}
+.owl-prev i, .owl-next i {transform : scale(1,2); color: #000000;}
+.owl-nav .owl-prev.disabled,
+.owl-nav .owl-next.disabled {
+   display: none;
+}
+.owl-carousel .owl-stage-outer {
+    overflow-x: scroll !important;
+    overflow-y: hidden !important;
+}
+
+.owl-carousel img { 
+    border-radius: 8px;
+}
+
+.tbs__content__main--image span {
+    display: none;
+}
+
+.tbs__content__main--image .content__descriptions span {
+    display: block;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+
+    .category--list__item {
+        min-width: 120px;
+        padding: 8px 0px;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    }
+}
+
+  @media only screen and (max-width: 767px) {
+    /* .product-image.active {
+        top: 42%;
+        left: 45%; 
+    } */
+    .category--list {
+        padding-left: 20px;
+    }
+    .owl-next, .owl-prev {
+        top: 28%;
+    }
+
+    .owl-carousel .owl-stage-outer {
+        padding: 0 0 20px;
+    }
+    .tbs__content {
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .tbs__content__main {
+        width: 100%;
+        padding: 0;
+    }
+    .tbs__content__main.right {
+        background-color: #EFEFEF;
+        padding: 32px 16px;
+    }
+
+    .tbs__content__main--image {
+        border: 1px solid #989898;
+        border-radius: 4px;
+        margin: 16px;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .tbs__content__main--image .content__image {
+        flex-basis: 40%;
+        width: 40%;
+        padding-left: 9px;
+        padding-right: 9px !important;
+    }
+
+    .tbs__content__main--image .content__descriptions {
+        flex-basis: 60%;
+        width: 60%;
+        padding-left: 0;
+    }
+
+    .tbs__content__main--image .content__descriptions h5 {
+        font-weight: 500;
+        font-size: 14;
+        line-height: 17px;
+    }
+
+    .tbs__content__main--image .content__descriptions .total_price {
+        font-size: 12;
+    }
+
+    .tbs__content__main--image .content__descriptions span {
+        display: none;
+    }
+
+    .tbs__content__main--image span {
+        display: block;
+        font-weight: 400;
+        font-size: 12px;
+        color: #989898;
+        padding-left: 9px;
+    }
+
+    /* .tbs__content__main--image .content__image img{
+        width: 78px !important;
+        height: 52px !important;
+    } */
+
+    .tbs__content__wrapper {
+        background: #FFFFFF;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+    }
+
+    .tbs__content__main h2{
+        font-size: 18px;
+        padding: 20px;
+        /* padding-bottom: ; */
+        border-bottom: 1px solid #DEDEDE;
+    }
+
+    .content-divider {
+        display: none;
+    }
+    .content__image, .content__descriptions, .owl-carousel, .content__total__price, .content__the_price, .tbs__content__form {
+        padding: 8px 20px;
+    }
+
+    .owl-carousel {
+        padding-right: 0;
+    }
+
+    /* .category--list {
+        padding-left: 20px;
+    }
+
+    .category--list__item {
+        min-width: 120px;
+        padding: 8px 0px;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    } */
+
+    .tbs__content__main h2.form_title{
+        padding-bottom: 0 !important;
+        text-transform: uppercase;
+        border: none;
+    }
+
+    .tbs__content__form-group label{
+        line-height: 17px;
+        font-weight: 400;
+    }
+
+    .label-semi-bold {
+        line-height: 19px !important;
+        font-weight: 500 !important;
+    }
+}

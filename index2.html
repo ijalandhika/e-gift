@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>Gift Card / </title>
+        <link rel="stylesheet" type="text/css" media="all" href="https://www.thebodyshop.co.id/static/version1633549177/_cache/merged/5d2b33e14b49ad924dd68ad0ee69fc97.min.css">
+        <!-- <link rel="stylesheet" type="text/css" media="all" href="https://magento-5.tbsgroup.co.id/static/version1632834008/_cache/merged/2db61df8bd1f7683303c1ed1c86c5eae.min.css"> -->
+        <link rel="stylesheet" type="text/css" media="all" href="./header.css">
+        <link rel="stylesheet" type="text/css" media="all" href="./content.css">
+        <script src="./assets/jquery/jquery-3.6.0.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="tbs__header">
+            <div class="tbs-header__sections">
+                <div class="tbs-header__sections--step active">
+                    <div class="number-circle">1</div>
+                    <div class="title-section">Design </div>
+                </div>
+                <span class="title-divider"></span>
+                <div class="tbs-header__sections--step active">
+                    <div class="number-circle">2</div> 
+                    <div class="title-section">Personalise </div>
+                </div>
+                <span class="title-divider"></span>
+                <div class="tbs-header__sections--step">
+                    <div class="number-circle">3</div>
+                    <div class="title-section">Payment </div> 
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container"> -->
+           <div class="tbs__content">
+               <div class="tbs__content__main">
+                    <div class="tbs__content__main--image">
+                        <div class="content__image">
+                            <img src="./images/main_image.png" height="340" />
+                        </div>
+                        <div class="content__descriptions">
+                            <h5>Thank you E-Gift card</h5>
+                            <div class="total_price">Rp.1.000.000</div>
+                            <span>Valid for 3 months from the issuance date</span>
+                        </div>
+                        <span>Valid for 3 months from the issuance date</span>
+                    </div>
+               </div>
+               <div class="content-divider"></div>
+               <div class="tbs__content__main">
+                    <h2 class="elipsis_text form_title">Personalised E-Gift Card</h2>
+                    <form method="POST" class="tbs__content__form">
+                        <div class="tbs__content__form-group">
+                            <label for="sender" class="label-semi-bold">Sender</label>
+                        </div>
+                        <div class="tbs__content__form-group">
+                            <label for="from">From</label>
+                            <input type="text" id="from"/>
+                        </div>
+                        <div class="tbs__content__form-group">
+                            <label for="recipient" class="label-semi-bold" >Recipient</label>
+                            <span>E-Giftcards are sent via E-mail and SMS, please ensure all details are correct.</span>
+                        </div>
+                        <div class="tbs__content__form-group">
+                            <label for="to">To</label>
+                            <input type="text" id="to"/>
+                        </div>
+                        <div class="tbs__content__form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" id="phone"/>
+                        </div>
+                        <div class="tbs__content__form-group">
+                            <label for="email">Email</label>
+                            <input type="text" id="email"/>
+                        </div>
+                        <div class="tbs__content__form-group">
+                            <label for="message">Message (Optional)</label>
+                            <textarea maxlength="255" id="message"></textarea>
+                            <p class="message-counter" id="message-counter">
+                                255/255
+                            </p>
+                            <script type="text/javascript">
+                                $(document).ready(function() {
+                                    $("#message").on("keyup", function() {
+                                        var maxChar = $(this).attr("maxlength");
+                                        var len = $(this).val().length;
+                                        var totalLeft = parseInt(maxChar) - parseInt(len);
+                                        if (len >= maxChar) {
+                                            $(this).val($(this).val().substr(0, maxChar));
+                                            totalLeft = 0;
+                                        }
+                                        $("#message-counter").html("255/"+(totalLeft));
+
+                                    });
+                                });
+                            </script>
+                        </div>
+                        <div class="content__proceed">
+                            <button>Proceed</button>
+                        </div>
+                    </form>
+                </div>
+           </div>
+        <!-- </div> -->
+    </body>
+</html>
