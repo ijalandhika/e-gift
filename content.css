@@ -1,23 +1,3 @@
-/* width */
-::-webkit-scrollbar {
-    height: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background:  #000000;; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background:  #000000;; 
-}
-
 .tbs__content {
     width: 100%;
     padding-top: 32px;
@@ -64,7 +44,9 @@
     margin: 5px !important; 
     padding: 9px 15px;
     line-height: 16.42px;
-    width: 25%;
+    min-width: 120px;
+    cursor: pointer;
+    /* width: 25%; */
 }
 
 .category--list__item.active {
@@ -125,6 +107,7 @@
     flex-basis: 50%;
     width: 50%;
     padding: 12px 10px;
+    cursor: pointer;
     
 }
 
@@ -144,6 +127,7 @@
 
 .content__proceed {
     padding-top: 33px;
+    cursor: pointer;
 }
 
 .content__proceed button {
@@ -215,6 +199,7 @@
 
 .products--list {
     position: relative;
+    cursor: pointer;
 }
 
 .product-image.active {
@@ -258,6 +243,22 @@
 .owl-carousel .owl-stage-outer {
     overflow-x: scroll !important;
     overflow-y: hidden !important;
+}
+
+div.owl-stage-outer::-webkit-scrollbar{
+    height: 5px;
+}
+
+div.owl-stage-outer::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+div.owl-stage-outer::-webkit-scrollbar-thumb {
+    background:  #000000;; 
+}
+
+div.owl-stage-outer::-webkit-scrollbar-thumb:hover {
+    background:  #000000;; 
 }
 
 .owl-carousel img { 
