@@ -163,6 +163,7 @@
     font-size: 16px;
     line-height: 19px;
     font-weight: 500;
+    display: block;
 }
 
 .tbs__content__form-group input, textarea{
