@@ -132,7 +132,6 @@
 
 .content__proceed button {
     width: 100%;
-    /* color: #626262; */
     color: #FFFFFF; 
     background-color: #000000;
     padding: 14px;
@@ -142,7 +141,7 @@
 .content__proceed button:disabled {
     color: #626262;
     background-color: #F4F4F4;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+    opacity: 1 !important;
 }
 
 .elipsis_text {
@@ -255,11 +254,11 @@ div.owl-stage-outer::-webkit-scrollbar-track {
 }
 
 div.owl-stage-outer::-webkit-scrollbar-thumb {
-    background:  #000000;; 
+    background-color: #000000 !important;
 }
 
 div.owl-stage-outer::-webkit-scrollbar-thumb:hover {
-    background:  #000000;; 
+    background-color: #000000 !important;
 }
 
 .owl-carousel img { 
