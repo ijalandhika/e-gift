@@ -202,6 +202,14 @@
     cursor: pointer;
 }
 
+.products--list.active {
+    position: relative;
+    cursor: pointer;
+    opacity: 0.6;
+    background: #3D7773;
+    border-radius: 8px;
+}
+
 .product-image.active {
     position: absolute;
     background-image: url("./images/checklist.png");
