@@ -3,3 +3,28 @@
     padding-right: 0;
     max-width: 100%;
 }
+
+.sendagift-index-index .page-wrapper .page-header .tbs-logo.logo-title{
+    display: flex;
+}
+
+.sendagift-index-index .page-wrapper .page-header .tbs-logo.logo-title a{
+    margin: 0 auto;
+    display: flex;
+    padding: 5px;
+}
+
+.sendagift-index-index .page-wrapper .page-header .tbs-logo.logo-title img{
+    width: 396px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .sendagift-index-index .page-wrapper .page-header .tbs-logo.logo-title img{
+        width: 198px;
+    }   
+
+    .sendagift-index-index .page-wrapper .page-header .tbs-logo.logo-title a{
+        padding: 12px;
+    }   
+}
