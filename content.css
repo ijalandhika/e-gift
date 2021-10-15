@@ -281,6 +281,74 @@ div.owl-stage-outer::-webkit-scrollbar-thumb:hover {
     display: block;
 }
 
+.content__main--step3 {
+    margin: 42px;
+    margin-top: 0;
+}
+
+.content__main--step3 .tbs__content__main--image {
+    border: 1px solid #989898;
+    border-radius: 4px;
+    margin-top: 18px;
+    padding: 18px 19px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.content__main--step3 .tbs__content__main--message .message--group{
+    margin-top: 18px;
+}
+.content__main--step3 .tbs__content__main--message .message--group label{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.content__main--step3 .tbs__content__main--image .line {
+    border: 1px solid #989898;
+    margin: 18px 0;
+}
+
+.content__main--step3 .tbs__content__main--image span{
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 19px;
+    color: #989898;
+}
+
+.content__main--step3 .tbs__content__main--image .content__image {
+    padding: 0;
+    width: 20%;
+    flex-basis: 20%;
+}
+
+.content__main--step3 .tbs__content__main--image .content__descriptions {
+    flex-basis: 75%;
+    width: 75%;
+    padding-left: 16px;
+}
+
+.content__main--step3 .tbs__content__main--image .content__descriptions h5 {
+    font-weight: 500;
+    font-size: 14;
+    line-height: 17px;
+}
+
+.content__main--step3 .tbs__content__main--image .content__descriptions .total_price {
+    margin-top: 19px;
+    font-weight: 600;
+    font-size: 14;
+    line-height: 17px;
+}
+
+/* .content__main--step3 .tbs__content__main--image .content__image img{
+    width: 25%;
+    flex-basis: 25%;
+} */
+
+
 @media only screen and (max-width: 1000px) {
 
     .category--list__item {

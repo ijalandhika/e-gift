@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>Gift Card / </title>
+        <link rel="stylesheet" type="text/css" media="all" href="https://www.thebodyshop.co.id/static/version1633549177/_cache/merged/5d2b33e14b49ad924dd68ad0ee69fc97.min.css">
+        <!-- <link rel="stylesheet" type="text/css" media="all" href="https://magento-5.tbsgroup.co.id/static/version1632834008/_cache/merged/2db61df8bd1f7683303c1ed1c86c5eae.min.css"> -->
+        <link rel="stylesheet" type="text/css" media="all" href="./header.css">
+        <link rel="stylesheet" type="text/css" media="all" href="./content.css">
+        <script src="./assets/jquery/jquery-3.6.0.min.js"></script>
+        <script src="./assets/owl-carousel/owl.carousel.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="tbs__header">
+            <div class="tbs-header__sections">
+                <div class="tbs-header__sections--step active">
+                    <div class="number-circle">1</div>
+                    <div class="title-section">Design </div>
+                </div>
+                <span class="title-divider"></span>
+                <div class="tbs-header__sections--step active">
+                    <div class="number-circle">2</div> 
+                    <div class="title-section">Personalise </div>
+                </div>
+                <span class="title-divider"></span>
+                <div class="tbs-header__sections--step active">
+                    <div class="number-circle">3</div>
+                    <div class="title-section">Payment </div> 
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container"> -->
+           <div class="tbs__content">
+               <div class="tbs__content__main">
+                   <div class="content__main--step3">
+                       <h2 class="elipsis_text">Order details</h2>
+                       <div class="tbs__content__main--image">
+                            <div class="content__image">
+                                <img src="./images/main_image.png" height="340" />
+                            </div>
+                            <div class="content__descriptions">
+                                <h5>Happy Birthday E-Gift Card Design</h5>
+                                <div class="total_price">Rp.1.000.000</div>
+                            </div>
+                            <span>Valid for 3 months from the issuance date</span>
+                            <div class="line"></div>
+                            <div class="tbs__content__main--message">
+                                <div class="message--group">
+                                    <label>From</label>
+                                    <p>Luke</p>
+                                </div>
+                                <div class="message--group">
+                                    <label>To</label>
+                                    <p>
+                                        Anakin <br/>
+                                        anakin@email.com <br/>
+                                        085123456789
+                                    </p>
+                                </div>
+                                <div class="message--group">
+                                    <label>Message</label>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur viverra orci eu hendrerit. Proin pharetra diam massa, nec finibus velit dictum eu. Suspendisse sit amet nunc in lorem vulputate ultricies. Pellentesque sagittis viverra justo eu hendr</p>
+                                </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="tbs__content__main--price">
+                       
+                   </div>
+               </div>
+               <div class="content-divider"></div>
+               <div class="tbs__content__main">
+                   <h2 class="elipsis_text">Select Payment Method</h2>
+                    
+                </div>
+               
+           </div>
+        <!-- </div> -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+              $(".owl-carousel").owlCarousel({
+                  loop: false,
+                //   margin: 12,
+                  nav: true,
+                  rewind:false,
+                  dots: false,
+                  margin:10,
+                  responsiveClass:true,
+                  responsive:{
+                        0:{
+                            items:1,
+                            nav:true
+                        },
+                        300:{
+                            items:2,
+                            nav:true,
+                            rewind:false,
+                            loop:false
+                        },
+                        1000:{
+                            items:3,
+                            nav:true,
+                            rewind:false,
+                            loop:false
+                        }
+                    },
+                  navText : ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>']
+              });
+            });
+        </script>
+    </body>
+</html>
