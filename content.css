@@ -410,6 +410,7 @@ div.owl-stage-outer::-webkit-scrollbar-thumb:hover {
     .tbs__content__form-group label{
         line-height: 17px;
         font-weight: 400;
+        font-size: 14px;
     }
 
     .label-semi-bold {
