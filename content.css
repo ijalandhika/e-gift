@@ -132,7 +132,7 @@
 
 .content__proceed button {
     width: 100%;
-    color: #FFFFFF; 
+    color: #FFFFFF !important; 
     background-color: #000000;
     padding: 14px;
     border: 0 !important;
@@ -228,7 +228,7 @@
     width: 15px;
     height: 40px;
     position: absolute;
-    top: 34%;
+    top: 35%;
     margin-left: 0px;
     /* display: block !important; */
     border:0px solid black;
@@ -238,12 +238,24 @@
     width: 15px;
     height: 40px;
     position: absolute;
-    top: 34%;
+    top: 35%;
     right: 0px;
     /* display: block !important; */
     border:0px solid black;
 }
 .owl-prev i, .owl-next i {transform : scale(1,2); color: #000000;}
+
+.owl-prev i {
+    position: relative;
+    
+}
+
+.owl-prev i::before {
+    position: absolute;
+    top: -7px;
+    left: -4px;
+}
+
 .owl-nav .owl-prev.disabled,
 .owl-nav .owl-next.disabled {
    display: none;
