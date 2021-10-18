@@ -239,7 +239,7 @@
     height: 40px;
     position: absolute;
     top: 35%;
-    right: 0px;
+    right: -.50px;
     /* display: block !important; */
     border:0px solid black;
 }
@@ -252,7 +252,7 @@
 
 .owl-prev i::before {
     position: absolute;
-    top: -7px;
+    top: -9.5px;
     left: -4px;
 }
 
