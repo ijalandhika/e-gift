@@ -31,6 +31,7 @@
     overflow-y: auto;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    position: relative;
 }
 .category--list::-webkit-scrollbar {
     display: none;
@@ -42,11 +43,16 @@
     border: 1px solid #000000;
     text-align: center;
     margin: 5px !important; 
-    padding: 9px 15px;
+    padding: 8px 16px;
     line-height: 16.42px;
-    min-width: 120px;
     cursor: pointer;
+    display: block;
+    min-width: 120px;
     /* width: 25%; */
+}
+
+.category--list__item:first-child {
+    margin-left: 0 !important;
 }
 
 .category--list__item.active {
@@ -93,6 +99,7 @@
     font-size: 28px;
     font-weight: 600;
     color: #000000;
+    border-top: 1px solid #DEDEDE;
 }
 
 .content__the_price {
@@ -136,10 +143,11 @@
     background-color: #000000;
     padding: 14px;
     border: 0 !important;
+    text-transform: uppercase;
 }
 
 .content__proceed button:disabled {
-    color: #626262;
+    color: #626262 !important;
     background-color: #F4F4F4;
     opacity: 1 !important;
 }
@@ -174,6 +182,10 @@
     padding: 14px 0;
     display: block;
     max-width: 323px;
+}
+
+.tbs__content__form-group  textarea{
+    line-height: 18px;
 }
 
 .tbs__content__form-group textarea{
@@ -224,6 +236,70 @@
     left: 45%; 
 }
 
+.owl-carousel.category--list .owl-item {
+    width: auto !important;
+    margin-right: 0 !important;
+}
+
+.owl-carousel.category--list .owl-stage {
+    display: flex !important;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.owl-carousel.category--list .owl-stage-outer {
+    padding:0;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.owl-carousel.category--list .owl-stage-outer::-webkit-scrollbar {
+    display: none;
+}
+
+.owl-carousel.category--list .owl-prev {
+    width: 15px;
+    height: 37px;
+    position: absolute;
+    /* display: block !important; */
+    border:0px solid black;
+    left: 0;
+    top: 16%;
+}
+
+.owl-carousel.category--list .owl-next {
+    width: 15px;
+    height: 37px;
+    position: absolute;
+    /* display: block !important; */
+    border:0px solid black;
+    right: 0;
+    top: 16%;
+}
+
+
+.owl-carousel.category--list .nav--carousel-img {
+    height: 13px;
+    display: block;
+    max-width: 7.59px !important;
+    position: absolute;
+    top: 14px;
+    right: 10px;    
+}
+
+.owl-carousel.image-list .nav--carousel-img {
+    height: 13px;
+    display: block;
+    max-width: 7.59px !important;
+    position: absolute;
+    top: 15px;
+    right: 11px;
+}
+
+.owl-carousel.image-list .owl-prev .nav--carousel-img {
+    right: 13px;
+}
+
 .owl-prev {
     width: 15px;
     height: 40px;
@@ -232,6 +308,7 @@
     margin-left: 0px;
     /* display: block !important; */
     border:0px solid black;
+    background: rgba(255, 255, 255, 0.8);
 }
 
 .owl-next {
@@ -242,12 +319,18 @@
     right: -.50px;
     /* display: block !important; */
     border:0px solid black;
+    background: rgba(255, 255, 255, 0.8);
 }
+
+button.owl-next:hover, button.owl-prev:hover {
+    border: 0 !important; 
+    color: inherit !important;
+}
+
 .owl-prev i, .owl-next i {transform : scale(1,2); color: #000000;}
 
 .owl-prev i {
-    position: relative;
-    
+    position: relative;    
 }
 
 .owl-prev i::before {
@@ -392,6 +475,9 @@ div.owl-stage-outer::-webkit-scrollbar-thumb:hover {
     flex-basis: 25%;
 } */
 
+.tbs__content__main--image .content__image {
+    padding-top: 0;
+}
 
 @media only screen and (max-width: 1000px) {
 
@@ -420,7 +506,7 @@ div.owl-stage-outer::-webkit-scrollbar-thumb:hover {
         padding-left: 5px;
     }
     .owl-next, .owl-prev {
-        top: 28%;
+        top: 23%;
     }
 
     .owl-carousel .owl-stage-outer {
