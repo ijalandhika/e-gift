@@ -1,0 +1,624 @@
+#gc-checkout-progress .page-main{
+    padding: 0;
+}
+
+/** product */
+.carousel-container{
+    min-height: 50px;
+}
+.carousel-container.loaded{
+    background: url(./images/loading-buffering.gif) bottom center no-repeat;
+    background-size: 36px;
+}
+.content__image__outer{
+    min-height: 300px;
+    background: url(./images/loading-buffering.gif) center center no-repeat;
+    background-size: 36px;
+
+}
+.owl-carousel{
+    background: #ffffff;
+}
+
+/** personalize */
+.tbs__content__main--image{
+    background: #fff;
+}
+
+/** payment */
+#giftcardPayment{
+    font-family: "AvenirNext",sans-serif;
+}
+
+.tbs__content__main--image-outer{
+    min-height: 300px;
+    background: url(./images/loading-buffering.gif) center 130px no-repeat;
+    background-size: 36px;
+}
+.payment--image-outer{
+    min-height: 80px;
+    background: url(./images/loading-buffering.gif) center 40px no-repeat;
+    background-size: 36px;
+}
+.content__main--step3 .tbs__content__main--image .content__descriptions{
+    background: #fff;
+}
+.content__main--step3 .tbs__content__main--image.payment--image-outer .line{
+    margin-top: 80px;
+}
+.content__main--step3 .tbs__content__main--image.payment--image-outer span + .line{
+    margin-top: 18px;
+}
+
+@media only screen and (max-width: 752px) {
+    .tbs__content__main--image-outer{
+            min-height: 80px;
+            background-position: center 40px;
+    }
+}
+
+/** payment */
+.payment-group .payment-method{
+    display: none;
+}
+.payment-group.active .payment-method{
+    display: block;
+}
+.saved-cards .list-cards{
+    margin-top: 10px;
+    overflow: hidden;
+    max-height: 200px;
+}
+.saved-cards .list-cards.allcard{
+    overflow: unset;
+    max-height: unset;
+}
+.saved-cards .see-more-cards{
+    text-align: right;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    border-bottom: 1px solid #989898;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    color: #004236;
+    font-weight: 500;
+}
+.theme-pearl.onestepcheckout-index-index .saved-cards .see-more-cards span{
+    font-weight: 600 !important;
+    color: #004236 
+}
+.saved-cards .see-more-cards .vmcard, .saved-cards .see-more-cards .vlcard{
+    background-position-x: right !important;
+    padding-right: 25px;
+    background-size: 12% !important;
+    background-position-y: 4px !important;
+}
+.saved-cards .see-more-cards .vmcard{
+    background: url(./images/arrow-down.png) no-repeat;
+}
+.saved-cards .see-more-cards .vlcard{
+    background: url(./images/arrow-up.png) no-repeat;
+}
+.saved-cards .see-more-cards.allcard .vmcard, .saved-cards .see-more-cards .vlcard{
+    display:none; 
+}
+.saved-cards .see-more-cards.allcard .vlcard{
+    display:inline;
+}
+.saved-cards .list-cards .saved-card-data .masked-card-no {
+    background: url(./images/visa.png) no-repeat;
+    background-size: 61px;
+    background-position: 0 10px;
+    padding-left: 70px;
+    line-height: 45px;
+}
+.saved-cards .list-cards .saved-card-data .masked-card-no[name=prefix-5] {
+    background: url(./images/mastercard.png) no-repeat;
+    background-size: 55px;
+    background-position: -1px 0px;
+}
+.saved-cards .list-cards .saved-card-data .masked-card-no[name=prefix-3] {
+    background: url(./images/JCBC.png) no-repeat;
+    background-size: 40px;
+    background-position: 3px 10px;
+}
+
+#icubeus_vtdirect-form .fieldset>.field:not(.choice)>.control {
+    position: relative;
+}
+
+#icubeus_vtdirect-form .fieldset>.field:not(.choice)>.control.prefix-5:after {
+    content: "";
+    width: 28px;
+    height: 22px;
+    display: block;
+    position: absolute;
+    background: url(./images/mastercard.png) no-repeat;
+    right: 0;
+    bottom: 13px;
+    background-size: 30px;
+}
+#icubeus_vtdirect-form .fieldset>.field:not(.choice)>.control.prefix-4:after {
+    content: "";
+    width: 41px;
+    height: 22px;
+    display: block;
+    position: absolute;
+    background: url(./images/visa.png) no-repeat;
+    right: 0;
+    bottom: 10px;
+    background-size: 41px;
+}
+#icubeus_vtdirect-form .fieldset > .field:not(.choice) > .control.prefix-3:after{
+    content:"";
+    width: 25px;
+    height: 22px;
+    display: block;
+    position: absolute;
+    background: url(./images/JCBC.png) no-repeat;
+    right: 0px;
+    bottom: 15px;
+    background-size: 24px;
+}
+
+.saved-cards .list-cards .saved-card-data {
+    background: #fff;
+    box-shadow: 0px 0px 6px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    margin: 18px 0 15px 4px;
+    display: block;
+    cursor: pointer;
+    width: calc(100% - 8px);
+    padding: 5px 20px;
+    border: 2px solid #fff;
+    position: relative;
+    font-size: 16px;
+}
+
+.saved-cards .list-cards li:first-child{
+    margin-top: 4px;
+}
+
+.saved-cards .list-cards .saved-card-data._active {
+    border: 2px solid #00ab00;
+}
+.saved-cards .list-cards .saved-card-data:hover {
+    opacity: .8;
+}
+
+.saved-cards .list-cards .saved-card-data._active:after {
+    content: '';
+    width: 27px;
+    height: 22px;
+    display: block;
+    background: url(./images/green-marker.png) no-repeat;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    right: 25px;
+    top: 32px;
+}
+.saved-cards .list-cards .saved-card-data .card-name {
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
+    display: block;
+    height: 25px;
+    padding-left: 3px;
+}
+
+.payment-group .step-title {
+    background: url(./images/arrow-down.png) no-repeat;
+    background-position: center right;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    display: block;
+    cursor: pointer;
+}
+
+.payment-group {
+    display: block;
+    overflow: hidden;
+    height: 80px;
+    border-bottom: 1px solid #989898;
+    padding: 10px 0;
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.payment-group.active {
+    height: auto;
+}
+
+.payment-group.active .step-title{
+    background-image: url(./images/arrow-up.png);
+}
+
+.payment-method-content .actions-toolbar {
+    display: none;
+}
+.banktransfer-top-instruct {
+    background: #efefef;
+    padding: 10px;
+    margin: 18px 10px;
+    font-weight: 400 !important;
+    font-size: 12px;
+    padding-left: 57px;
+    position: relative;
+    line-height: 20px;
+}
+.banktransfer-top-instruct:before {
+    content: '';
+    display: block;
+    background: url(./images/question.png) no-repeat;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+}
+
+.accordion-instruct {
+    display: block;
+    border: 1px solid;
+    padding: 0;
+    border-radius: 5px;
+}
+.payment-method._active .pay-instruct .accordion-instruct li {
+    display: block;
+    overflow: hidden;
+    height: 50px;
+    border-bottom: 1px solid;
+    margin: 0;
+    padding-left: 0;
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+}
+.payment-method._active .pay-instruct .accordion-instruct li:last-child {
+    border-bottom: 0;
+}
+.accordion-instruct li span {
+    font-size: 16px;
+}
+.accordion-instruct li:after{
+    content:'';
+    background: url(./images/arrow-down.png) no-repeat;
+    width: 30px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 24px;
+    background-size: 14px;
+}
+.accordion-instruct li._active:after{
+    background: url(./images/arrow-up.png) no-repeat;
+    background-size: 14px;
+}
+
+.payment-method._active .pay-instruct .accordion-instruct li._active {
+    height: auto;
+}
+
+.payment-method [type=radio]:checked+label, .payment-method [type=radio]:not(:checked)+label {
+    position: relative;
+    width: 100%;
+    padding-left: 35px;
+    cursor: pointer;
+    line-height: 25px;
+    display: inline-block;
+    color: #666;
+    font-weight: 600 !important;
+    font-size: 16px;
+    text-align: left;
+}
+
+.payment-method label>img.pay-img, .last__payment img {
+    height: 50px;
+    margin-top: 0;
+    vertical-align: middle;
+}
+.payment-method [type=radio]+label>span {
+    padding-top: 15px;
+}
+.payment-method .pay-id-doku_installmentmandiri p > img {
+    display: none;
+}
+.payment-method [type=radio]+label[for="banktransfer"]>span {
+    padding-top: 16px;
+}
+
+.payment-method [type=radio]+label>span {
+    display: block;
+    position: absolute;
+    right: 180px;
+    top: 0;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+    width: 100px;
+    white-space: nowrap;
+}
+
+.payment-method [type=radio]{
+    position: absolute;
+    left: -9999px;
+}
+
+.payment-method [type=radio]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #000;
+    border-radius: 100%;
+    background: #fff;
+    z-index: 2;
+}
+
+.payment-method [type=radio]:not(:checked)+label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    width: 16px;
+    height: 16px;
+    background: #229845;
+    position: absolute;
+    top: 3px;
+    left: 1px;
+    border-radius: 100%;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    font-family: 'icomoon';
+    content: '\e908';
+    color: #fff;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.payment-method [type=radio]:checked+label:before, .payment-method [type=radio]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #000;
+    border-radius: 100%;
+    background: #fff;
+    z-index: 2;
+}
+
+.payment-method [type=radio]:checked+label:after {
+    -webkit-transition: all .1s ease;
+    transition: all .1s ease;
+    border: 0;
+    content: '';
+    position: absolute;
+    top: 21px;
+    left: 3px;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    background: #000;
+    z-index: 3;
+}
+
+#gc-checkout-progress .checkout-payment-method .payment-method-title{
+    padding: 0;
+    padding-left: 15px;
+}
+
+.payment-method.pay-id-ovo p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+    margin-top: 0;
+}
+
+.last__payment span {
+    display: inline-block;
+    color: #3a857e;
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.payment-method input[type=number], .payment-method input[type=text], .payment-method input[type=password]{
+    border: none;
+    height: 45px;
+    padding: 0;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.payment-method input[type=number].mage-error, .payment-method input[type=text].mage-error, .payment-method input[type=password].mage-error{
+    border-bottom: 1px solid #ed8380;
+}
+
+mage-error
+
+.payment-method input[type=text].input-text.input-cc-no {
+    width: 100%;
+}
+
+.payment-method .fieldset>.field.date {
+    width: 50%;
+    float: left;
+    display: block;
+}
+
+.payment-method .fieldset>.field.cvv {
+    width: calc(50% - 30px);
+    float: left;
+    display: block;
+    margin-left: 30px !important;
+}
+
+.payment-method .fieldset>.field {
+    margin: 0 0 30px;
+}
+
+#ovo-form h3 {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    display: block;
+    cursor: pointer;
+}
+.fieldset.payment>.field span {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.checkout-payment-method .ccard .cvv .label {
+    display: inline-block;
+    width: 100%;
+}
+.checkout-payment-method .ccard .cvv .input-text {
+    width: 100%;
+}
+
+.checkout-payment-method .ccard > .field.cvv > .control {
+    padding-right: 0px;
+    width: 100%;
+}
+
+.payment-method input[type=text].input-text.input-cc-no {
+    width: 100%;
+}
+
+.fieldset.payment .field-error.sag-error span{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.checkout-payment-method .payment-method._active .payment-method-content {
+    padding-left: 5px;
+}
+.payment-method-content form fieldset{
+    padding-left: 10px;
+}
+.clearer{
+    clear: both;
+}
+
+.payment-method .additional-fee {
+    display: block;
+    background: #000;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5px 15px;
+    margin: 0 10px;
+}
+
+.tnc-payment{
+    padding: 0px 45px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.payment-method .steps_ti{
+    padding-left: 10px;
+}
+
+.payment-method ol.step_list{
+    padding-left: 30px;
+}
+
+.payment-method [type=radio]+label>span.pay-addinfo {
+    display: block;
+    position: absolute;
+    top: 25px;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: left;
+}
+
+.payment-method select {
+    padding: 10px !important;
+    font-size: 16px;
+    color: #000;
+    padding-left: 0 !important;
+    text-transform: capitalize;
+    border-color: #989898;
+    border: none;
+    height: 45px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.payment-method fieldset.doku_installmentmandiri, .installmentmandiri-redirect-note{
+    display: none;
+}
+.placeorder-msg-container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.35);
+    z-index: 1000;
+    top:  0px;
+    left:  0px;
+    display: none;
+}
+.placeorder-msg-container.active{
+    display: block;
+}
+.message-error__container{
+    position: absolute;
+    border: 1px solid #ccc;
+    background: #fff;
+    width:  450px;
+    padding: 32px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.message-error__container .message.error > *:first-child:before{
+    display: none;
+}
+
+.message-error__container .message.error {
+    margin: 0;
+    padding: 28px 0 0 0;
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
+    background: none;
+    color: #000;
+    position: relative;
+}
+.message-error__container .title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+}
+.mandiriinstallment_spacer{
+    padding-bottom: 20px;
+}
+
+.error__msg{
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: #fff  !important;
+    background: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 49px;
+    margin-top: 51px;
+}
