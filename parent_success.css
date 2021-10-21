@@ -1,0 +1,28 @@
+.checkout-onepage-success .page-wrapper #maincontent .payment-info .gift-recipient-info{
+    background-color: #FFFFFF !important;
+    border: 1px solid #989898 !important;
+    box-sizing: border-box;
+    border-radius: 4px !important;
+    text-align: left !important;
+    padding-left: 22px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.checkout-onepage-success .page-wrapper #maincontent .payment-info .gift-recipient-info .label{
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    color: #000000;
+}
+
+.checkout-onepage-success .page-wrapper #maincontent .payment-info .gift-recipient-info .value{
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+}
+
+@media only screen and (max-width: 767px) {
+    .checkout-onepage-success .page-wrapper #maincontent .payment-info .gift-recipient-info .label{
+        display: block !important;
+    }
+}
