@@ -312,7 +312,7 @@
     padding-left: 35px;
     cursor: pointer;
     line-height: 25px;
-    /* display: inline-block; */
+    display: inline-block;
     color: #666;
     font-weight: 600 !important;
     font-size: 16px;
@@ -633,26 +633,26 @@ mage-error
     #gc-checkout-progress .checkout-payment-method .payment-method-title{ 
         padding-left: 25px;
     }
-    .payment-group.active {
-        padding-right: 17px;
+    .payment-group {
+        padding-right: 32px;
         padding-left: 17px;
     }
 
     .checkout-payment-method .payment-group+.payment-group .step-title {
-        margin: 17px 0 14px !important;
+        margin: 17px 17px 14px !important;
     }
     .payment-method [type=radio]+label>span {
 
         font-size: 12px;
         padding-left: 25px;
         font-weight: 400;
-        right: 0;
+        right: 100;
 
     }
 
-    .payment-group.active .payment-method {
+    /* .payment-group.active .payment-method {
         padding-left: 32px;
-    }
+    } */
     .payment-method [type=radio]+label>span.pay-addinfo { 
         right: 123px;
         font-size: 10px;
