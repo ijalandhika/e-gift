@@ -312,7 +312,7 @@
     padding-left: 35px;
     cursor: pointer;
     line-height: 25px;
-    display: inline-block;
+    /* display: inline-block; */
     color: #666;
     font-weight: 600 !important;
     font-size: 16px;
@@ -345,6 +345,7 @@
     text-align: left;
     width: 100px;
     white-space: nowrap;
+    padding-left: 25px;
 }
 
 .payment-method [type=radio]{
@@ -416,6 +417,7 @@
 #gc-checkout-progress .checkout-payment-method .payment-method-title{
     padding: 0;
     padding-left: 15px;
+    padding-bottom: 20px;
 }
 
 .payment-method.pay-id-ovo p {
@@ -621,4 +623,49 @@ mage-error
     font-weight: 500;
     line-height: 49px;
     margin-top: 51px;
+}
+
+.checkout-payment-method .payment-group+.payment-group .step-title {
+    margin: 17px 0 14px !important;
+}
+
+@media only screen and (max-width: 767px) {
+    #gc-checkout-progress .checkout-payment-method .payment-method-title{ 
+        padding-left: 25px;
+    }
+    .payment-group.active {
+        padding-right: 17px;
+        padding-left: 17px;
+    }
+
+    .checkout-payment-method .payment-group+.payment-group .step-title {
+        margin: 17px 0 14px !important;
+    }
+    .payment-method [type=radio]+label>span {
+
+        font-size: 12px;
+        padding-left: 25px;
+        font-weight: 400;
+        right: 0;
+
+    }
+
+    .payment-group.active .payment-method {
+        padding-left: 32px;
+    }
+    .payment-method [type=radio]+label>span.pay-addinfo { 
+        right: 123px;
+        font-size: 10px;
+        top: 17px;
+    }
+
+    .accordion-instruct li span, .accordion-instruct .accordion-expand {
+        font-size: 12px;
+    }
+
+    .payment-method ol.step_list {
+        font-size: 12px;
+    }
+
+
 }
