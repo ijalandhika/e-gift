@@ -639,7 +639,7 @@ mage-error
     }
 
     .checkout-payment-method .payment-group+.payment-group .step-title {
-        margin: 17px 17px 14px !important;
+        margin: 17px 0 14px !important;
     }
     .payment-method [type=radio]+label>span {
 
