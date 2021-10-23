@@ -1,0 +1,263 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            The Body Shop
+        </title>
+        <style type="text/css">
+            .centered_position {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+
+            .font_20 {
+                line-height: 24px;
+                font-size: 20px;
+            }
+
+            .font_18 {
+                line-height: 24px;
+                font-size: 18px;
+            }
+
+            .font_16 {
+                line-height: 24px;
+                font-size: 16px;
+            }
+
+            .font_14 {
+                line-height: 24px;
+                font-size: 16px;
+            }
+
+            .font_bold {
+                font-weight: 600;
+            }
+
+            .font_bold_700 {
+                font-weight: 700;
+            }
+
+            .font_normal {
+                font-weight: 400;
+            }
+
+            .font_green {
+                color: #004236;
+            }
+
+            .giftcard-container {
+                background: #FFFFFF;
+                box-shadow: 0px 4px 8px rgb(0 0 0 / 10%);
+                border-radius: 8px;
+            }
+
+            .giftcard-content {
+                padding: 28px 24px 24px;
+            }
+
+            .container_first_row {
+                text-align: right;
+                padding: 28px 24px 0;
+            }
+
+            .container_second_row {
+                padding: 0 24px 21px;
+            }
+
+            .container_rows {
+                padding: 0 24px;
+            }
+
+            .giftcard-container.centered_position {
+                width: 60% !important;
+            }
+
+            .howto {
+                background: #F4F4F4;
+                padding: 24px;
+                margin-top: 64px;
+                width: 60%;
+            }
+
+            .main_image {
+                margin-top: 54px; 
+                border-radius: 4px;
+            }
+
+            .main_image_legend {
+                margin-top: 5px;
+            }
+
+            @media only screen and (max-width: 767px) {
+                body {
+                    margin: 16px !important;
+                }
+                .giftcard-container.centered_position {
+                    width: 85% !important;
+                }
+                .giftcard-container.centered_position h2{
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 18px;
+                }
+
+                .container_first_row {
+                    padding: 18px 13px 0;
+                }
+                .container_second_row {
+                    padding: 0 18px 21px;
+                }
+
+                .container_rows {
+                    padding: 0 18px;
+                }
+
+                .container_rows .font_16 {
+                    font-size: 14px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 75%;
+                }
+
+                .centered_position.howto {
+                    width: 85%;
+                    margin-top:40px;
+                    padding: 18px;
+                }
+
+                .centered_position.howto .font_18 {
+                    font-size: 14px;
+                }
+
+                .centered_position.howto .font_14 {
+                    font-size: 12px;
+                }
+
+                .centered_position.main_image {
+                    margin-top: 46px; 
+                    width: 90%;
+                }
+
+                .centered_position.main_image_legend {
+                    font-size: 14px;
+                    width: 90%;
+                }
+
+                .centered_position.font_18.font_green, .centered_position.font_16.font_green {
+                    width: 90%;
+                }
+
+                .email-summary .font_18.font_bold {
+                    font-size: 14px;
+                }
+
+                .tbs_faq {
+                    font-size: 12px;
+                }
+            }
+        </style>
+    </head>
+    <body style="margin: 32px;">
+        {{template config_path="design/email/header_template"}}
+
+        <table>
+            <tr class="email-intro">
+                <td>
+                    <p class="greeting font_16" style="margin-top: 20px;">Dear, {{trans "%customer_name" customer_name=$name}}</p>
+                    <h2 class="font_18 font_bold">
+                    Kamu mendapatkan The Body Shop® E-Gift Card dengan total nilai: {{trans "%gc_amount," gc_amount=$balance}} dari {{trans "%sender_name," sender_name=$sender_name}}
+                    </h2>
+                    <p>
+                        <!-- <img class="centered_position main_image" src="./images/image2.png"> -->
+                        <img class="centered_position main_image" src="{{var giftcard_image}}">
+                        
+                        <em class="centered_position main_image_legend">The Body Shop® E-Gift Card</em>
+                    </p>
+                {{if gift_message}}
+                <h2 class="centered_position font_18 font_green">Dear, {{trans "%customer_name," customer_name=$name}}</h2>
+                <!-- <h2 class="centered_position font_18 font_green">Dear, [Recipient Name]</h2> -->
+                <p class="centered_position font_16 font_green" style="padding-top: 18px;">{{var gift_message}}</p>
+                
+                {{/if}}
+                <h2 class="centered_position font_18 font_green" style="padding-top: 18px;">From {{trans "%sender_name" sender_name=$sender_name}}</h2>
+                </td>
+            </tr>
+            <tr class="email-summary">
+                <td>
+                    <div class="giftcard-container centered_position">
+                        <table style="width: 100%;">
+                            <tr>
+                                <td class="container_first_row">
+                                <table style="width: 100%">
+                                    <tr class="font_green">
+                                        <td style="text-align: left;"><h2>GIFT CARD CODE </h2></td>
+                                        <td style="text-align: right;"><h2>{{var balance}}</h2></td>
+                                    </tr>
+                                </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="container_second_row">
+                                    <div style="border-top: 1px solid #3A857E;"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="container_rows">
+                                    <div style="background: #F4F4F4;border-radius: 8px;padding-top: 13px;padding-bottom: 14px;text-align: center;">
+                                        <h2 style="margin: 0;">{{var first_code}}</h2>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="container_rows">
+                                    <p class="font_16" style="color: #989898;">Valid until {{var expiry_code}}</p>   
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+
+            <tr class="email-summary">
+                <td>
+                    <div class="centered_position howto">
+                        <h3 class="font_18">How to use The Body Shop® E-Gift Card</h3>
+                        <ol class="font_14" style="padding-left: 16px;">
+                            <li style="padding-left: 9px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur viverra orci eu hendrerit.</li>
+                            <li style="padding-left: 9px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur viverra orci eu hendrerit.</li>
+                            <li style="padding-left: 9px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur viverra orci eu hendrerit.</li>
+                            <li style="padding-left: 9px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur viverra orci eu hendrerit.</li>
+                        </ol>
+                    </div>
+                </td>
+            </tr>
+
+            <tr class="email-summary">
+                <td>
+                    <a 
+                        class="centered_position" 
+                        style="background: #000000;border-radius: 8px;text-align: center;color: #FFFFFF;text-decoration: none;margin-top: 31px;margin-bottom: 64px;padding: 12px;"
+                        href='{{config path="web/secure/base_url"}}'>
+                        Shop Now
+                    </a>
+                </td>
+            </tr>
+
+            <tr class="email-summary">
+                <td>
+                    <h2 class="font_18 font_bold">The Body Shop® E-Gift Card T&C and FAQ</h2>
+                    <p class="tbs_faq" style="margin-top: 18px;margin-bottom: 32px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur viverra orci eu hendrerit see FAQ or Terms & Conditions</p>
+                    <div style="border-top: 1px solid #3A857E;margin-bottom: 14px;"></div>
+                </td>
+            </tr>
+            
+        </table>
+
+        {{template config_path="design/email/footer_template"}}
+    </body>
+</html>
