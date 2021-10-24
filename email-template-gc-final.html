@@ -13,6 +13,11 @@
                 width: 50%;
             }
 
+            .font_24 {
+                line-height: 24px;
+                font-size: 24px;
+            }
+
             .font_20 {
                 line-height: 24px;
                 font-size: 20px;
@@ -148,7 +153,7 @@
                     width: 90%;
                 }
 
-                .centered_position.font_18.font_green, .centered_position.font_16.font_green {
+                .centered_position.font_18.font_green, .centered_position.font_16.font_green, .centered_position.font_24.font_green.font_bold {
                     width: 90%;
                 }
 
@@ -173,10 +178,13 @@
                     Kamu mendapatkan The Body Shop® E-Gift Card dengan total nilai: {{trans "%gc_amount," gc_amount=$balance}} dari {{trans "%sender_name," sender_name=$sender_name}}
                     </h2>
                     <p>
-                        <!-- <img class="centered_position main_image" src="./images/image2.png"> -->
-                        <img class="centered_position main_image" src="{{var giftcard_image}}">
+                        <img class="centered_position main_image" src="./images/image2.png">
+                        <!-- <img class="centered_position main_image" src="{{var giftcard_image}}"> -->
                         
                         <em class="centered_position main_image_legend">The Body Shop® E-Gift Card</em>
+                        <!-- <h2>{{var balance}}</h2> -->
+                        <span class="centered_position font_24 font_green font_bold" style="margin-top: 10px;">{{var balance}}</span>
+                        <!-- <span class="centered_position font_24 font_green font_bold" style="margin-top: 10px;">Rp.1.000.000</span> -->
                     </p>
                 {{if gift_message}}
                 <h2 class="centered_position font_18 font_green">Dear, {{trans "%customer_name," customer_name=$name}}</h2>
