@@ -522,6 +522,18 @@ div.owl-stage-outer::-webkit-scrollbar-thumb:hover {
         flex-flow: row wrap;
     }
 
+    .tbs__content__main--form {
+        margin: 16px;
+    }
+
+    .tbs__content__main--form .elipsis_text.form_title {
+        padding-left: 0;
+    }
+
+    .tbs__content__main--form .tbs__content__form {
+        padding-left: 0;
+    }
+
     .tbs__content__main--image .content__image {
         flex-basis: 40%;
         width: 40%;
