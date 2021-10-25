@@ -32,7 +32,7 @@
            <div class="tbs__content">
                <div class="tbs__content__main left">
                     <h2 class="elipsis_text">select your e-gift card design</h2>
-                    <div class="owl-carousel category--list">
+                    <div class="owl-carousel category--list" id="category-carousel">
                         <div class="category--list__item active">All Ocassion</div>
                         <div class="category--list__item">Engagement</div>
                         <div class="category--list__item">Christmas</div>
@@ -49,7 +49,7 @@
                         <h5>Thank you E-Gift card</h5>
                         <span>Valid for 3 months from the issuance date</span>
                     </div>
-                    <div class="owl-carousel image-list">
+                    <div class="owl-carousel image-list" id="image-carousel">
                         <div class="products--list active"> 
                             <img src="./images/image1.png" />
                             <div class="product-image active"></div>
@@ -116,33 +116,39 @@
         <!-- </div> -->
         <script type="text/javascript">
             $(document).ready(function(){
-              $(".owl-carousel").owlCarousel({
-                  loop: false,
-                  nav: true,
-                  rewind:false,
-                  dots: false,
-                  margin:10,
-                //   responsiveClass:true,
-                //   responsive:{
-                //         0:{
-                //             items:1,
-                //             nav:true
-                //         },
-                //         300:{
-                //             items:2,
-                //             nav:true,
-                //             rewind:false,
-                //             loop:false
-                //         },
-                //         1000:{
-                //             items:3,
-                //             nav:true,
-                //             rewind:false,
-                //             loop:false
-                //         }
-                //     },
-                    navText : ['<img src="./images/icon_left.png" class="nav--carousel-img" />', '<img src="./images/icon_right.png" class="nav--carousel-img" />']
-              });
+                var checkWidth = $(window).width();
+
+                var theOwl = $(".owl-carousel");
+
+                if (checkWidth > 767) { 
+                    theOwl.owlCarousel({
+                        loop: false,
+                        nav: true,
+                        rewind:false,
+                        dots: false,
+                        margin:10,
+                        responsiveClass:true,
+                        responsive:{
+                                0:{
+                                items:1,
+                                nav:true
+                            },
+                            300:{
+                                items:3,
+                                nav:true,
+                                rewind:false,
+                                loop:false
+                            },
+                            1000:{
+                                items:4,
+                                nav:true,
+                                rewind:false,
+                                loop:false
+                            }
+                        },
+                        navText : ['<img src="./images/icon_left.png" class="nav--carousel-img" />', '<img src="./images/icon_right.png" class="nav--carousel-img" />']
+                    });
+                }
             });
         </script>
     </body>
