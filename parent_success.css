@@ -7,6 +7,7 @@
     padding-left: 22px;
     padding-top: 14px;
     padding-bottom: 14px;
+    margin-bottom: 24px;
 }
 
 .checkout-onepage-success .page-wrapper #maincontent .payment-info .gift-recipient-info .label{
@@ -21,8 +22,20 @@
     color: #000000;
 }
 
+.checkout-onepage-success .bank_transfer > div {
+    margin-bottom: 24px !important;
+}
+
 @media only screen and (max-width: 767px) {
     .checkout-onepage-success .page-wrapper #maincontent .payment-info .gift-recipient-info .label{
         display: block !important;
+    }
+
+    .checkout-onepage-success .page-wrapper #maincontent .payment-info .gift-recipient-info{
+        margin-bottom: 18px;
+    }
+
+    .checkout-onepage-success .bank_transfer > div {
+        margin-bottom: 20px !important;
     }
 }
