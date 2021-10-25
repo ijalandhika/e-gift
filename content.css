@@ -99,7 +99,6 @@
     font-size: 28px;
     font-weight: 600;
     color: #000000;
-    border-top: 1px solid #DEDEDE;
 }
 
 .content__the_price {
@@ -493,6 +492,10 @@ div.owl-stage-outer::-webkit-scrollbar-thumb:hover {
         top: 42%;
         left: 45%; 
     } */
+
+    .content__total__price {
+        border-top: 1px solid #DEDEDE;
+    }
 
     .content__main--step3 {
         margin: 0;
