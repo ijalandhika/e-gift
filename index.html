@@ -118,36 +118,38 @@
             $(document).ready(function(){
                 var checkWidth = $(window).width();
 
-                var theOwl = $(".owl-carousel");
+                var config = {
+                    loop: false,
+                    nav: true,
+                    rewind:false,
+                    dots: false,
+                    margin:10,
+                    responsiveClass:true,
+                    responsive:{
+                            0:{
+                            items:1,
+                            nav:true
+                        },
+                        300:{
+                            items:3,
+                            nav:true,
+                            rewind:false,
+                            loop:false
+                        },
+                        1000:{
+                            items:4,
+                            nav:true,
+                            rewind:false,
+                            loop:false
+                        }
+                    },
+                    navText : ['<img src="./images/icon_left.png" class="nav--carousel-img" />', '<img src="./images/icon_right.png" class="nav--carousel-img" />']
+                }
+                $("#image-carousel").owlCarousel(config);
+                var theOwl = $("#category-carousel");
 
                 if (checkWidth > 767) { 
-                    theOwl.owlCarousel({
-                        loop: false,
-                        nav: true,
-                        rewind:false,
-                        dots: false,
-                        margin:10,
-                        responsiveClass:true,
-                        responsive:{
-                                0:{
-                                items:1,
-                                nav:true
-                            },
-                            300:{
-                                items:3,
-                                nav:true,
-                                rewind:false,
-                                loop:false
-                            },
-                            1000:{
-                                items:4,
-                                nav:true,
-                                rewind:false,
-                                loop:false
-                            }
-                        },
-                        navText : ['<img src="./images/icon_left.png" class="nav--carousel-img" />', '<img src="./images/icon_right.png" class="nav--carousel-img" />']
-                    });
+                    theOwl.owlCarousel(config);
                 }
             });
         </script>
