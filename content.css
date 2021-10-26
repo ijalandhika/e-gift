@@ -1,3 +1,87 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/font/worksans/WorkSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/font/worksans/WorkSans-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/font/worksans/WorkSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/font/worksans/WorkSans-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/font/worksans/WorkSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/font/worksans/WorkSans-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/font/worksans/WorkSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/font/worksans/WorkSans-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/font/worksans/WorkSans-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('/assets/font/worksans/WorkSans-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: fallback;
+}
+
+body {
+    font-family: "Work Sans",sans-serif;
+}
+
 .tbs__content {
     width: 100%;
     padding-top: 32px;
