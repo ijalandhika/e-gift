@@ -162,7 +162,7 @@
 }
 
 .tbs__content__form-group {
-    padding: 12px 0;
+    padding: 10px 0;
 }
 
 .tbs__content__form-group label{
@@ -524,7 +524,7 @@ div.owl-stage-outer::-webkit-scrollbar-thumb:hover {
     }
 
     .tbs__content__main--form {
-        margin: 16px;
+        margin: 2px 16px;
     }
 
     .tbs__content__main--form .elipsis_text.form_title {
@@ -540,12 +540,14 @@ div.owl-stage-outer::-webkit-scrollbar-thumb:hover {
         width: 40%;
         padding-left: 9px;
         padding-right: 9px !important;
+        padding-top: 16px;
     }
 
     .tbs__content__main--image .content__descriptions {
         flex-basis: 60%;
         width: 60%;
         padding-left: 0;
+        padding-top: 16px;
     }
 
     .tbs__content__main--image .content__descriptions h5 {
@@ -583,9 +585,13 @@ div.owl-stage-outer::-webkit-scrollbar-thumb:hover {
 
     .tbs__content__main h2{
         font-size: 18px;
-        padding: 20px 10px;
+        padding: 0 10px;
         /* padding-bottom: ; */
         /* border-bottom: 1px solid #DEDEDE; */
+    }
+
+    .tbs__content__main .content__main--step3 h2 {
+        padding-top: 18px !important;   
     }
 
     .content-divider {
