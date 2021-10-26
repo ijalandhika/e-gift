@@ -1,0 +1,115 @@
+#cancel-order-container .block-content a {
+    color: #F8F3E8;
+}
+
+@media only screen and (max-width: 767px) { 
+
+    #maincontent .page-title-wrapper {
+        margin-top: 9px;
+    }
+
+    .theme-pearl.sales-order-view #maincontent .page-title-wrapper .page-title span.base {
+        font-size: 18px;
+    }
+
+    .theme-pearl.sales-order-view #maincontent .page-title-wrapper .container-custom-status .order-status {
+        font-size: 16px;
+        margin-top: 8px;
+        margin-bottom: 19px;
+    }
+
+    .theme-pearl.sales-order-view #maincontent .page-title-wrapper .order-date {
+        display: none;
+    }
+
+    .theme-pearl.sales-order-view #maincontent .order-details-items .order-title {
+        display: none;
+    }
+
+    .theme-pearl.sales-order-view #maincontent .order-actions-toolbar {
+        margin-bottom: 25px;
+    }
+
+    .theme-pearl.sales-order-view #maincontent .order-details-items .product-item-name {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .theme-pearl.sales-order-view #maincontent .order-item.order-item-egiftcard .item-details .subtotal .price {
+        font-size: 14px;
+    }
+
+    .theme-pearl.sales-order-view #maincontent .order-item .recipient-details .title strong{
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .theme-pearl.sales-order-view #maincontent .order-item .recipient-details {
+        margin-bottom: 18px;
+    }
+
+    .theme-pearl.sales-order-view #maincontent .order-item .recipient-details .name .option, 
+    .theme-pearl.sales-order-view #maincontent .order-item .recipient-details .email .option,
+    .theme-pearl.sales-order-view #maincontent .order-item .recipient-details .phone-number .option {
+        display: none;
+    }
+
+    #my-orders-table {
+        margin-bottom: 0;
+    }
+
+    .theme-pearl.sales-order-view #maincontent .order-details-items .table-wrapper:not(:last-child) {
+        margin-bottom: 18px;
+    }
+
+    .theme-pearl.sales-order-view #maincontent .block .block-content .box-title span {
+        font-size: 16px !important;
+    }
+
+    .theme-pearl.sales-order-view #maincontent dl.payment-method .title {
+        position: relative;
+        font-size: 14px !important;
+    }
+
+    .theme-pearl.sales-order-view #maincontent .payment-method .data.table tr th {
+        font-size: 16px !important;
+        padding-top: 18px;
+    }
+
+    .theme-pearl.sales-order-view #maincontent .payment-method .data.table tr {
+        display: block;
+    }
+
+    .theme-pearl.sales-order-view #maincontent .payment-method .data.table tr td {
+        font-size: 14px !important;
+        padding-left: 0;
+        padding-top: 8px !important;
+        float: left;
+    }
+
+    .theme-pearl.sales-order-view #maincontent .box-title.price-details {
+        background: none;
+        padding-bottom: 18px;
+        padding-left: 0;
+        font-size: 16px !important;
+    }
+
+    .theme-pearl.sales-order-view #maincontent tfoot th {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .theme-pearl.sales-order-view #maincontent tfoot .grand_total strong {
+        font-size: 14px;
+    }
+
+    .theme-pearl.sales-order-view #maincontent tfoot .grand_total strong span{
+        font-weight: 400;
+    }
+
+    #cancel-order-container {
+        margin-top: 42px;
+    }
+
+
+}
