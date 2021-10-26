@@ -478,6 +478,11 @@ div.owl-stage-outer::-webkit-scrollbar-thumb:hover {
         left: 45%; 
     } */
 
+    .content__the_price--item {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
     .content__total__price {
         border-top: 1px solid #DEDEDE;
     }
@@ -590,8 +595,12 @@ div.owl-stage-outer::-webkit-scrollbar-thumb:hover {
         /* border-bottom: 1px solid #DEDEDE; */
     }
 
-    .tbs__content__main .content__main--step3 h2 {
+    .tbs__content__main .content__main--step3 h2, .tbs__content__main.left h2, .tbs__content__main.right .tbs__content__wrapper h2 {
         padding-top: 18px !important;   
+    }
+
+    .tbs__content__main.right .tbs__content__wrapper h2 {
+        padding-bottom: 18px !important;   
     }
 
     .content-divider {
@@ -599,6 +608,10 @@ div.owl-stage-outer::-webkit-scrollbar-thumb:hover {
     }
     .content__image, .content__descriptions, .owl-carousel, .content__total__price, .content__the_price, .tbs__content__form {
         padding: 8px 10px;
+    }
+
+    .content__total__price {
+        padding-top: 18px;
     }
 
     .owl-carousel {
