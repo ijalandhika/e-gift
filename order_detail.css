@@ -1,5 +1,64 @@
+.theme-pearl.sales-order-view #maincontent .page-title-wrapper .container-custom-status .order-status.pending {
+    color: #E4B150;
+}
+
+.theme-pearl.sales-order-view #maincontent .page-title-wrapper .container-custom-status .order-status.delivered {
+    color: #00AB00;
+}
+
+.theme-pearl.sales-order-view #maincontent .page-title-wrapper .container-custom-status .order-status.cancelled {
+    color: #FF4233;
+}
+
+.theme-pearl.sales-order-view #maincontent .page-title-wrapper .order-date {
+    display: none;
+}
+
+.theme-pearl.sales-order-view #maincontent .order-details-items .product-item-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
 #cancel-order-container .block-content a {
     color: #F8F3E8;
+}
+
+.theme-pearl.sales-order-view #maincontent .order-item .recipient-details {
+    margin-top: 24px;
+}
+
+.theme-pearl.sales-order-view #maincontent .box-title.price-details {
+    padding-top: 24px !important;
+}
+
+.theme-pearl.sales-order-view #maincontent tfoot th {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.theme-pearl.sales-order-view #maincontent  .amount span.price {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.confirm-payment_outer .action.primary.confirm-payment {
+    font-size: 18px;
+}
+
+#cancel-order-container .block-content .action.primary.cancel-order {
+    font-size: 18px;
+}
+
+@media only screen and (min-width: 768px) { 
+    .theme-pearl.sales-order-view #maincontent .order-item .recipient-details .name , 
+    .theme-pearl.sales-order-view #maincontent .order-item .recipient-details .email,
+    .theme-pearl.sales-order-view #maincontent .order-item .recipient-details .phone-number {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 16px;
+    }
+
 }
 
 @media only screen and (max-width: 767px) { 
